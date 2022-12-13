@@ -1,0 +1,104 @@
+/* geral*/
+/*reset css, tecnbica para a pagina ser exibida em todos os navegadores*/
+*{
+    margin: 0;/* remove as margens da tela*/
+    padding: 0;
+    box-sizing: border-box;/* isso abre espaço nas caixas de preenchimento de texto*/
+    font-family:  Helvetica; /*pode ser alterada*/
+    color: #323232; /*quase preto*/
+    border: none;
+}
+body{
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+a,label{
+    font-size: .8rem;
+}
+a:hover{
+    color: rgb(0, 162, 255);
+}
+/*container-login, estiulizando o container de login*/
+#LoginContainer{
+background-color: rgb(214, 206, 183);
+width: 400px;
+margin-left: 80px ;
+margin-right: 500px;
+padding: 20px 30px;
+height: 520px;
+margin-top: 10vh;
+border-radius: 10px;
+text-align: center;
+}
+/*formulário, estilizando o formulário*/
+form{
+margin-top: 30px;
+margin-bottom: 40px;
+
+}
+/* set padrao do texto de login*/
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+/* estilizando os textos*/
+label{
+    font: bold;
+}
+/* set geral dos inputs*/
+input{
+    border-bottom: 2px solid  #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+input :focus{
+    border-bottom: 2px solid #455ff7;
+}
+/* o uso do block aqui é para permitir o texto alinhar a direita*/
+#forgot-password{
+    text-align: right;
+    display: block;
+
+}
+
+input[type="submit"] {
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+border: none;
+height: 40px;
+border-radius: 20px;
+margin-top: 30px;
+color: rgb(236, 230, 230);
+background-color: #7d49dd;
+cursor: pointer;
+
+}
+input[type="submit"]:hover{
+background-color: #652fc9;
+transition: .5s;
+}
+/* redes sociais*/
+#SocialContainer, #SocialContainer p {
+margin-bottom: 20px;
+
+}
+#SocialContainer i{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+/*registrar*/
+#RegisterContainer p{
+margin-bottom: 5px;
+}
